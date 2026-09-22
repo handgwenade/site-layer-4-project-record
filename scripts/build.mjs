@@ -6,8 +6,16 @@ import assert from 'node:assert/strict';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = resolve(root, 'public');
-const output = resolve(root, 'dist');
-const manifest = JSON.parse(readFileSync(resolve(root, 'approved-manifest.json'))).files;
+const preview = process.argv.includes('--preview');
+const output = resolve(root, preview ? 'preview-dist' : 'dist');
+const approved = JSON.parse(readFileSync(resolve(root, 'approved-manifest.json'))).files;
+// A local review must not silently approve a new production manifest.
+const overrides = preview ? JSON.parse(readFileSync(resolve(root, 'preview-manifest.json'))).files : {};
+for (const path of Object.keys(overrides)) {
+  assert.ok(['participation-guide.html', 'participation-guide.css', 'participation-guide.js'].includes(path),
+    `Outside the local participation-review scope: ${path}`);
+}
+const manifest = { ...approved, ...overrides };
 const origin = JSON.parse(readFileSync(resolve(root, 'site.config.json'))).origin;
 const previousOrigin = 'https://slater-project-record.viirl-1659.chatgpt.site';
 assert.equal(new URL(origin).origin, origin, 'Use a valid HTTPS origin without a trailing slash');
@@ -43,4 +51,4 @@ if (!process.argv.includes('--check')) {
   assert.deepEqual(files(output).map(path => relative(output, path)).sort(), actual,
     'Unexpected output files: do not deploy');
 }
-console.log(`Verified ${actual.length} approved files; ${metadataUpdates} metadata files point to ${origin}. Original records unchanged.`);
+console.log(`Verified ${actual.length} ${preview ? 'local-review' : 'approved'} files; ${metadataUpdates} metadata files point to ${origin}. Original records unchanged.${preview ? ' Not cleared for publication.' : ''}`);

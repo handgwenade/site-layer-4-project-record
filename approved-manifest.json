@@ -49,8 +49,8 @@
       "bytes": 7589
     },
     "participation-guide.html": {
-      "sha256": "bd0c5c1e9623dc08a38257d5464af09f7934d24d38a03146039fcce184c1fed6",
-      "bytes": 13630
+      "sha256": "5a7fe6a41701a30ed5d7649e80b442d9ca9f644ad12f7c7d2d3500bd043d314b",
+      "bytes": 25783
     },
     "preview.css": {
       "sha256": "6458247615356608c6d72c127b57b53e9967c4c4cb3c2685d3654ef3cf74625e",
@@ -215,6 +215,14 @@
     "wydeq-status-2026-09-16.html": {
       "sha256": "9c0df5e537747accfdb3c2dad77a4af15c331299e4f475de9d32e518f16293e3",
       "bytes": 4573
+    },
+    "participation-guide.css": {
+      "sha256": "b22568061b1bb9ed99a861283f6a2f519eda9dd143aab34ce7079aa6cc5f83e9",
+      "bytes": 8537
+    },
+    "participation-guide.js": {
+      "sha256": "d6a9b8cfd6f324cd5e2b73137e51c104243c39fa19bdcd8dc3e74d1149a283ea",
+      "bytes": 1037
     }
   },
   "audience": "existing public Site; unchanged",

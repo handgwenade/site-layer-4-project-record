@@ -1,5 +1,7 @@
 /.vercel/
 /dist/
+/preview-dist/
+/preview-manifest.json
 /node_modules/
 /.env*
 /.DS_Store

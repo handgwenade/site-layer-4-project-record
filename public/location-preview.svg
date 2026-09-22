@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300" role="img" aria-labelledby="title desc">
+ <title id="title">Approximate project location near Wheatland</title>
+ <desc id="desc">Schematic orientation: Site Layer 4 northeast of Wheatland, with Chugwater to the south. Dots are approximate reference locations, not property boundaries. No infrastructure connections are shown.</desc>
+ <defs><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#d0dedb" stroke-width="1"/></pattern></defs>
+ <rect width="460" height="300" fill="#e9f1ed"/><rect width="460" height="300" fill="url(#grid)"/>
+ <text x="22" y="31" font-family="system-ui,sans-serif" font-size="13" letter-spacing="2" fill="#405b59">PLATTE COUNTY · WYOMING</text>
+ <path d="M418 64V33m-6 9 6-9 6 9" fill="none" stroke="#405b59" stroke-width="2"/><text x="413" y="85" font-family="system-ui,sans-serif" font-size="14" fill="#405b59">N</text>
+ <circle cx="294" cy="107" r="24" fill="#e8dfef"/><circle cx="294" cy="107" r="7" fill="#6d3fb0"/>
+ <text x="270" y="63" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#10233b">Site Layer 4</text><text x="272" y="83" font-family="system-ui,sans-serif" font-size="15" fill="#52647a">approximate</text>
+ <circle cx="108" cy="139" r="6" fill="#10233b"/><text x="28" y="177" font-family="system-ui,sans-serif" font-size="21" font-weight="600" fill="#10233b">Wheatland</text>
+ <circle cx="209" cy="244" r="5" fill="#10233b"/><text x="228" y="253" font-family="system-ui,sans-serif" font-size="19" fill="#10233b">Chugwater</text>
+ <text x="22" y="286" font-family="system-ui,sans-serif" font-size="13" fill="#405b59">SCHEMATIC · NOT TO SCALE</text>
+</svg>

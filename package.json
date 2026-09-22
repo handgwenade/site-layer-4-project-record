@@ -1,0 +1,11 @@
+{
+  "name": "site-layer-4-project-record",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check"
+  },
+  "engines": { "node": "24.x" }
+}

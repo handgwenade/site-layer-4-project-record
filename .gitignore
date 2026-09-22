@@ -1,0 +1,10 @@
+/.vercel/
+/dist/
+/node_modules/
+/.env*
+/.DS_Store
+**/._*
+/qa/
+/backups/
+/research/
+*.log

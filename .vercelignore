@@ -1,0 +1,9 @@
+.git
+.vercel
+dist
+qa
+backups
+research
+node_modules
+.env*
+**/._*

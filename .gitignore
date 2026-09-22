@@ -8,3 +8,5 @@
 /backups/
 /research/
 *.log
+.vercel
+.env*

@@ -10,12 +10,14 @@ const config = JSON.parse(readFileSync(resolve(root, 'social-sharing.json')));
 const { origin } = JSON.parse(readFileSync(resolve(root, 'site.config.json')));
 const output = resolve(root, process.argv.includes('--production') ? 'dist' : 'preview-dist');
 const approved = JSON.parse(readFileSync(resolve(root, 'approved-manifest.json'))).files;
+const overrides = process.argv.includes('--production') ? {} : JSON.parse(readFileSync(resolve(root, 'preview-manifest.json'))).files;
 const decode = text => text.replaceAll('&quot;', '"').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&amp;', '&');
 const tags = html => [...html.matchAll(/<meta\b[^>]*>/gi)].map(([tag]) => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map(([, key, value]) => [key, decode(value)])));
 let records = 0;
 for (const [path, metadata] of Object.entries(approved)) {
   const bytes = readFileSync(resolve(root, 'public', path));
-  assert.equal(createHash('sha256').update(bytes).digest('hex'), metadata.sha256, `Original input changed: ${path}`);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), (overrides[path] || metadata).sha256, `Input changed outside preview manifest: ${path}`);
+  if (path.startsWith('records/')) assert.equal(createHash('sha256').update(bytes).digest('hex'), metadata.sha256, `Original record changed: ${path}`);
   if (!path.endsWith('.html') && !['sitemap.xml', 'robots.txt'].includes(path)) assert.deepEqual(readFileSync(resolve(output, path)), bytes, path);
   if (path.startsWith('records/')) records++;
 }

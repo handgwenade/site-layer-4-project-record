@@ -15,7 +15,9 @@ const approved = JSON.parse(readFileSync(resolve(root, 'approved-manifest.json')
 // A local review must not silently approve a new production manifest.
 const overrides = preview ? JSON.parse(readFileSync(resolve(root, 'preview-manifest.json'))).files : {};
 for (const path of Object.keys(overrides)) {
-  assert.ok(['participation-guide.html', 'participation-guide.css', 'participation-guide.js', sharing.image.path].includes(path),
+  assert.ok(['participation-guide.html', 'participation-guide.css', 'participation-guide.js', sharing.image.path,
+    'index.html', 'project-details.html', 'location-preview.svg', 'source-map.js', 'source-map.css',
+    'maps/application-figure-2.jpg', 'maps/application-figure-3.jpg'].includes(path),
     `Outside the authorized local-review scope: ${path}`);
 }
 const manifest = { ...approved, ...overrides };

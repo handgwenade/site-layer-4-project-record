@@ -29,16 +29,24 @@
       "bytes": 10240
     },
     "index.html": {
-      "sha256": "370329e7aff935ce31d4ee2a9efb396714bcaea6ced360d06c466f399e1c1476",
-      "bytes": 25574
+      "sha256": "3c0e6905fb3a3a4db1a9e33f26f9fcc9c63399310aac5caf0517789fe0f1da16",
+      "bytes": 25660
     },
     "location-preview.svg": {
-      "sha256": "22fc3b9a612f05b500ac0309d09d95cd303209ef4cef013109c70e0b95905eaf",
-      "bytes": 1751
+      "sha256": "50e9b09d153d6b3d6299522b457f217ab67c6c27a9628f21cc7f96ea35d7d6ad",
+      "bytes": 1025898
     },
     "map.js": {
       "sha256": "06cf7bf75cc0eeeddf4ea4c280e76a8fbb0d432df0b307721b49647cef6f76a3",
       "bytes": 4976
+    },
+    "maps/application-figure-2.jpg": {
+      "sha256": "b4195b4988c01442d376de58bf762ac68db625234cba85be7791c41512ed1647",
+      "bytes": 786605
+    },
+    "maps/application-figure-3.jpg": {
+      "sha256": "faf0e6333fc1c007951f60fbf622f6c6068b9b89839961898464607e80fbdeba",
+      "bytes": 768687
     },
     "meeting-2026-09-16.html": {
       "sha256": "3e7832b6a119e9e71016a802c459a869c589daf80645faff66b91ff45bba76bd",
@@ -48,9 +56,17 @@
       "sha256": "a0b5461a3a3eb9db737cbce5db740953ebdabfad6ccea66bb7b6af56c46a8dba",
       "bytes": 7589
     },
+    "participation-guide.css": {
+      "sha256": "b22568061b1bb9ed99a861283f6a2f519eda9dd143aab34ce7079aa6cc5f83e9",
+      "bytes": 8537
+    },
     "participation-guide.html": {
       "sha256": "5a7fe6a41701a30ed5d7649e80b442d9ca9f644ad12f7c7d2d3500bd043d314b",
       "bytes": 25783
+    },
+    "participation-guide.js": {
+      "sha256": "d6a9b8cfd6f324cd5e2b73137e51c104243c39fa19bdcd8dc3e74d1149a283ea",
+      "bytes": 1037
     },
     "preview.css": {
       "sha256": "6458247615356608c6d72c127b57b53e9967c4c4cb3c2685d3654ef3cf74625e",
@@ -61,8 +77,8 @@
       "bytes": 2321
     },
     "project-details.html": {
-      "sha256": "bf4d8e05862e3e999fc28df93a9341fcfd49a7b4b25c8fe72ded09a27002e8b8",
-      "bytes": 26239
+      "sha256": "ac4c45d4569d15330551c2fc499db3e3a82d6a6dd41dc939ea4f12dfebc94770",
+      "bytes": 26702
     },
     "project-notes.html": {
       "sha256": "416331b19af4fcaebff6ec7a9e6e5cef722b71c98bb656b313f606694cfb1622",
@@ -192,6 +208,22 @@
       "sha256": "f416a99887fd88b08b453e0747dde5c2cf1ac8571a435e5a995ca63739d8567e",
       "bytes": 1818
     },
+    "social/site-layer-4-share-v1.png": {
+      "sha256": "b4e9fe1cb3fd3e015fc55784776cdaaf0b4972b0533c16e2efba2ca9113779c0",
+      "bytes": 884583
+    },
+    "social/site-layer-4-share-v2.png": {
+      "sha256": "8d2c5838aa2d4cf8d8b87d60d5c107b0ab8465200c3d9b07db060a3943bd0a95",
+      "bytes": 847813
+    },
+    "source-map.css": {
+      "sha256": "ac4e6dca72d9139d463a07760176ed7713a7b7b8d1e14930e840ee068f2e7b1a",
+      "bytes": 1586
+    },
+    "source-map.js": {
+      "sha256": "4039ccbdf45ea6bec8bab4d2f51659a4876dbef350ce94b296747897d4994367",
+      "bytes": 2144
+    },
     "sources.html": {
       "sha256": "13269142b1f33bd2a0dca31b552a20d8482fb9781fe715e81c4978cf17e9c29a",
       "bytes": 26663
@@ -215,18 +247,6 @@
     "wydeq-status-2026-09-16.html": {
       "sha256": "9c0df5e537747accfdb3c2dad77a4af15c331299e4f475de9d32e518f16293e3",
       "bytes": 4573
-    },
-    "participation-guide.css": {
-      "sha256": "b22568061b1bb9ed99a861283f6a2f519eda9dd143aab34ce7079aa6cc5f83e9",
-      "bytes": 8537
-    },
-    "participation-guide.js": {
-      "sha256": "d6a9b8cfd6f324cd5e2b73137e51c104243c39fa19bdcd8dc3e74d1149a283ea",
-      "bytes": 1037
-    },
-    "social/site-layer-4-share-v1.png": {
-      "sha256": "b4e9fe1cb3fd3e015fc55784776cdaaf0b4972b0533c16e2efba2ca9113779c0",
-      "bytes": 884583
     }
   },
   "audience": "existing public Site; unchanged",

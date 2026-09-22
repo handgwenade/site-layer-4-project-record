@@ -2,11 +2,11 @@
   "releaseStatus": "approved",
   "siteName": "Site Layer 4 Project Record",
   "image": {
-    "path": "social/site-layer-4-share-v1.png",
+    "path": "social/site-layer-4-share-v2.png",
     "width": 1200,
     "height": 630,
     "type": "image/png",
-    "alt": "Site Layer 4 Project Record: independent public-records research near Wheatland, Wyoming, beside an approximate map of Site Layer 4 and Chugwater Energy. Locations do not establish verified boundaries or utility connections."
+    "alt": "Site Layer 4 Project Record beside Figure 2 from the county application. Red outline: applicant's project area. Black dashes: 2-mile context buffer, not a project boundary. Not a surveyed construction footprint."
   },
   "pages": {
     "index.html": {
@@ -27,7 +27,7 @@
     },
     "project-details.html": {
       "title": "Project map, status and timeline | Site Layer 4 Project Record",
-      "description": "Explore approximate project locations, nearby projects, dated status findings, and the timeline. Map lines do not establish verified infrastructure connections."
+      "description": "Explore the applicant's project-area maps from PDF pages 15–16, nearby communities, dated status findings, and the timeline. Context buffers are not project boundaries."
     },
     "records.html": {
       "title": "Original records and sources | Site Layer 4 Project Record",

@@ -3,17 +3,20 @@ import { resolve, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
+import { addSocialMetadata } from './social-sharing.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = resolve(root, 'public');
 const preview = process.argv.includes('--preview');
+const sharing = JSON.parse(readFileSync(resolve(root, 'social-sharing.json')));
+assert.ok(preview || sharing.releaseStatus === 'approved', 'Social-sharing changes are local review only; publication approval is required.');
 const output = resolve(root, preview ? 'preview-dist' : 'dist');
 const approved = JSON.parse(readFileSync(resolve(root, 'approved-manifest.json'))).files;
 // A local review must not silently approve a new production manifest.
 const overrides = preview ? JSON.parse(readFileSync(resolve(root, 'preview-manifest.json'))).files : {};
 for (const path of Object.keys(overrides)) {
-  assert.ok(['participation-guide.html', 'participation-guide.css', 'participation-guide.js'].includes(path),
-    `Outside the local participation-review scope: ${path}`);
+  assert.ok(['participation-guide.html', 'participation-guide.css', 'participation-guide.js', sharing.image.path].includes(path),
+    `Outside the authorized local-review scope: ${path}`);
 }
 const manifest = { ...approved, ...overrides };
 const origin = JSON.parse(readFileSync(resolve(root, 'site.config.json'))).origin;
@@ -29,6 +32,9 @@ function files(dir) {
 }
 const actual = files(source).map(path => relative(source, path)).sort();
 assert.deepEqual(actual, Object.keys(manifest).sort(), 'Public inputs must match the approved allowlist');
+assert.deepEqual(actual.filter(path => path.endsWith('.html')).sort(), Object.keys(sharing.pages).sort(), 'Every page needs its own sharing metadata');
+assert.ok(preview || actual.includes(sharing.image.path), 'The approved sharing image must be in the public allowlist before publication');
+if (preview && !actual.includes(sharing.image.path)) console.warn('INCOMPLETE PREVIEW: sharing image awaits the supplied Facebook artwork. Metadata checks do not verify the missing image.');
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 let metadataUpdates = 0;
 for (const path of actual) {
@@ -37,7 +43,8 @@ for (const path of actual) {
   let bytes = original;
   if (path.endsWith('.html') || path === 'sitemap.xml' || path === 'robots.txt') {
     const text = original.toString('utf8');
-    const updated = text.replaceAll(previousOrigin, origin);
+    let updated = text.replaceAll(previousOrigin, origin);
+    if (path.endsWith('.html')) updated = addSocialMetadata(updated, path, sharing, origin);
     if (updated !== text) metadataUpdates++;
     bytes = Buffer.from(updated);
   }

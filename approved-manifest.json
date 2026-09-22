@@ -223,6 +223,10 @@
     "participation-guide.js": {
       "sha256": "d6a9b8cfd6f324cd5e2b73137e51c104243c39fa19bdcd8dc3e74d1149a283ea",
       "bytes": 1037
+    },
+    "social/site-layer-4-share-v1.png": {
+      "sha256": "b4e9fe1cb3fd3e015fc55784776cdaaf0b4972b0533c16e2efba2ca9113779c0",
+      "bytes": 884583
     }
   },
   "audience": "existing public Site; unchanged",

@@ -1,0 +1,85 @@
+{
+  "releaseStatus": "approved",
+  "siteName": "Site Layer 4 Project Record",
+  "image": {
+    "path": "social/site-layer-4-share-v1.png",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png",
+    "alt": "Site Layer 4 Project Record: independent public-records research near Wheatland, Wyoming, beside an approximate map of Site Layer 4 and Chugwater Energy. Locations do not establish verified boundaries or utility connections."
+  },
+  "pages": {
+    "index.html": {
+      "title": "Site Layer 4 Project Record | What's proposed near Wheatland",
+      "description": "Follow the proposed data-center and energy campus near Wheatland: public records, water and electricity questions, proposed safeguards, and how to comment."
+    },
+    "participation-guide.html": {
+      "title": "Have your say | Site Layer 4 Project Record",
+      "description": "Find county land-use hearing and federal utility filing instructions, dated deadline checks, and proposed comment wording to adapt."
+    },
+    "water.html": {
+      "title": "Water and wells | Site Layer 4 Project Record",
+      "description": "Understand the applicant's water descriptions, why their scopes are not established as comparable, and which water and well protections remain unverified."
+    },
+    "tri-state-high-impact-load-tariff.html": {
+      "title": "Electric bills and the REA letter | Site Layer 4 Project Record",
+      "description": "Read the Wheatland REA letter, understand general large-load utility protections, and see which Site Layer 4 agreements and security remain unverified."
+    },
+    "project-details.html": {
+      "title": "Project map, status and timeline | Site Layer 4 Project Record",
+      "description": "Explore approximate project locations, nearby projects, dated status findings, and the timeline. Map lines do not establish verified infrastructure connections."
+    },
+    "records.html": {
+      "title": "Original records and sources | Site Layer 4 Project Record",
+      "description": "Find county decision records, the REA member letter, agency correspondence, and the project timeline. Original PDFs and the records ZIP remain available."
+    },
+    "safeguards.html": {
+      "title": "All 59 detailed safeguards | Site Layer 4 Project Record",
+      "description": "Compare all 59 safeguards with their evidence, responsibilities and sources. General rules, project commitments and proposed requests are distinguished."
+    },
+    "proposed-safeguards.html": {
+      "title": "Proposed safeguards for review | Site Layer 4 Project Record",
+      "description": "Review eight proposed safeguards for water, public costs and project accountability. These are requests for consideration, not adopted project requirements."
+    },
+    "operating-standards.html": {
+      "title": "Noise, light and operating standards | Site Layer 4 Project Record",
+      "description": "Compare existing general and covered-solar rules with proposed campus-wide noise, lighting and setback protections that are not established in reviewed records."
+    },
+    "public-costs.html": {
+      "title": "Public costs and cleanup protection | Site Layer 4 Project Record",
+      "description": "Explore public-service funding and cleanup safeguards. Reviewed records do not establish signed project funding agreements or posted, drawable cleanup security."
+    },
+    "governance.html": {
+      "title": "Ownership, transparency and enforcement | Site Layer 4 Project Record",
+      "description": "Distinguish existing enforcement authority from unresolved project ownership, public reporting, inspections and proposed commitments binding future owners."
+    },
+    "state-oversight.html": {
+      "title": "State oversight and community funding | Site Layer 4 Project Record",
+      "description": "Follow state permitting and community-funding questions. The reviewed records do not establish the project's state permitting route or a final decision."
+    },
+    "meeting-2026-09-16.html": {
+      "title": "September 16 rules recommendations | Site Layer 4 Project Record",
+      "description": "Read analysis of the September 16 countywide data-center rules recommendations. Recommended text is not proof of final commissioner adoption."
+    },
+    "project-notes.html": {
+      "title": "Research log and open questions | Site Layer 4 Project Record",
+      "description": "Trace dated research, records requests, limited public excerpts and unanswered questions. Historical milestones are preserved with their evidence limits."
+    },
+    "evidence.html": {
+      "title": "Evidence notes and source limits | Site Layer 4 Project Record",
+      "description": "Review claim-by-claim evidence, exact source locations, qualifications and records still needed. Research notes are not additional agency findings."
+    },
+    "sources.html": {
+      "title": "Source register and access limits | Site Layer 4 Project Record",
+      "description": "Locate source documents, approved public excerpts and provenance notes, including access limitations and distinctions between staff reports and final actions."
+    },
+    "review-status.html": {
+      "title": "About the record and evidence limits | Site Layer 4 Project Record",
+      "description": "Learn how to read this independent record. Not established in reviewed records does not mean does not exist; proposed safeguards are not adopted requirements."
+    },
+    "wydeq-status-2026-09-16.html": {
+      "title": "Preserved September 16 DEQ response | Site Layer 4 Project Record",
+      "description": "Read preserved September 16, 2026 agency-status paragraphs and their source-access limitations. This reproduction is not a current agency confirmation."
+    }
+  }
+}

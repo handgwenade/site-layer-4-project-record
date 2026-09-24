@@ -1,0 +1,129 @@
+/* Shared Take Action module; adapted from the original standalone preview. */
+.sl4-participate {
+  --action-bg: #10233b;
+  --action-card: #182f4b;
+  --action-border: #526a85;
+  --action-text: #fff;
+  --action-muted: #c5d3e3;
+  --action-county: #e8bd62;
+  --action-federal: #9fc7ff;
+  color: var(--action-text);
+  background: var(--action-bg);
+  border: 1px solid var(--action-border);
+  border-radius: 14px;
+  padding: clamp(1rem, 3vw, 2.25rem);
+  margin: 2rem 0;
+}
+.sl4-participate .action-eyebrow {
+  color: var(--action-county);
+  font-size: .76rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .6rem;
+}
+.sl4-participate .action-heading {
+  color: var(--action-text);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  max-width: 28ch;
+  margin: 0 0 1rem;
+}
+.sl4-participate p, .sl4-participate li, .sl4-participate dd {
+  color: var(--action-muted);
+  font-size: .96rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.sl4-participate .action-lede {max-width: 68ch; margin: 0 0 1.5rem; font-size: 1.05rem;}
+.sl4-participate strong {color: var(--action-text);}
+.sl4-participate a, .participation-guide .sl4-participate a {
+  color: var(--action-federal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.sl4-participate a:hover {text-decoration-thickness: 2px;}
+.sl4-participate :focus-visible, .participation-guide .sl4-participate :focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+  box-shadow: none;
+}
+.sl4-participate .action-deadlines {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+  align-items: start;
+}
+.sl4-participate .action-card {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.4rem);
+  background: var(--action-card);
+  border: 1px solid var(--action-border);
+  border-top: 3px solid var(--action-county);
+  border-radius: 12px;
+}
+.sl4-participate .action-federal {border-top-color: var(--action-federal);}
+.sl4-participate .action-tags {display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem;}
+.sl4-participate .action-chip {
+  font-size: .72rem;
+  line-height: 1.4;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-weight: 750;
+  border: 1px solid var(--action-border);
+  border-radius: 999px;
+  padding: .25rem .6rem;
+  color: var(--action-muted);
+}
+.sl4-participate .action-chip-county {border-color: var(--action-county); color: var(--action-county);}
+.sl4-participate .action-chip-federal {border-color: var(--action-federal); color: var(--action-federal);}
+.sl4-participate p.action-when {
+  color: var(--action-text);
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.45rem, 2.7vw, 1.95rem);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -.025em;
+}
+.sl4-participate .action-when > span {display: block; font-size: 1rem; letter-spacing: 0; margin-top: .45rem; line-height: 1.5;}
+.sl4-participate .action-time {display: inline-block;}
+.sl4-participate h3, .sl4-participate .action-card > h2, .sl4-participate .action-say > h2 {color: var(--action-text); font-size: 1.15rem; line-height: 1.35; letter-spacing: 0; margin: 0 0 .7rem;}
+.sl4-participate .action-card p {margin-bottom: .9rem;}
+.sl4-participate .action-scope {border-left: 3px solid var(--action-county); padding-left: .8rem;}
+.sl4-participate .action-how {list-style: none; margin: 1rem 0; padding: 0;}
+.sl4-participate .action-how li {border-top: 1px solid var(--action-border); padding: .7rem 0; margin: 0;}
+.sl4-participate .action-how li:last-child {padding-bottom: 0;}
+.sl4-participate .action-links {display: flex; flex-direction: column; gap: .6rem; font-size: .92rem; line-height: 1.5;}
+.sl4-participate .action-next {font-weight: 750; margin-top: .35rem;}
+.sl4-participate .action-explainer {margin: 0;}
+.sl4-participate .action-explainer > div {margin-bottom: .8rem;}
+.sl4-participate .action-explainer dt {font-size: .94rem; font-weight: 750; color: var(--action-text);}
+.sl4-participate .action-explainer dd {margin: .1rem 0 0;}
+.sl4-participate .action-technical {
+  background: transparent;
+  border: 0;
+  border-block: 1px solid var(--action-border);
+  border-radius: 0;
+  margin: 1rem 0;
+  padding: 0;
+}
+.sl4-participate .action-technical summary {color: var(--action-federal); font-size: .92rem; line-height: 1.6; padding: .8rem .2rem; cursor: pointer;}
+.sl4-participate .action-technical p {font-size: .9rem; margin: .4rem 0 1rem;}
+.sl4-participate .action-say {background: var(--action-card); border: 1px solid var(--action-border); border-radius: 12px; padding: clamp(1rem, 2vw, 1.4rem);}
+.sl4-participate .action-say > p {max-width: 80ch; margin: 0 0 1rem;}
+.sl4-participate .action-points {margin: 0; padding: 0; list-style: none; display: grid; gap: .85rem;}
+.sl4-participate .action-points li {position: relative; padding-left: 1.4rem; margin: 0;}
+.sl4-participate .action-points li::before {content: '→'; position: absolute; left: 0; color: var(--action-county); font-weight: 750;}
+.sl4-participate .action-fineprint {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.5rem;}
+.sl4-participate .action-fineprint p {font-size: .86rem; margin: 0;}
+.sl4-participate .action-fineprint strong {display: block; margin-bottom: .25rem;}
+.sl4-participate p.action-check {font-size: .86rem; margin: 1.3rem 0 0; padding-top: 1rem; border-top: 1px solid var(--action-border);}
+.action-sr-only {position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;}
+@media (max-width: 760px) {
+  .sl4-participate .action-deadlines, .sl4-participate .action-fineprint {grid-template-columns: 1fr;}
+  .sl4-participate .action-fineprint {gap: .9rem;}
+}

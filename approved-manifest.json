@@ -12,6 +12,10 @@
       "sha256": "a3b0ea92a2474a89d4e645ef76d7ead8b25d74761951fe5ea9d892e55260aabb",
       "bytes": 4844
     },
+    "decision-guide.css": {
+      "sha256": "81a861ffd6dc2f90116e14d6bfa42dbf1ca378c6e4387e53133c36c5176abf5f",
+      "bytes": 5188
+    },
     "evidence.html": {
       "sha256": "27e6c6311584c6b197d8205bb2f82bc70d8612884466ed558dbf99410602d4c7",
       "bytes": 93098
@@ -25,12 +29,12 @@
       "bytes": 13388
     },
     "governance.html": {
-      "sha256": "6bf28cf9d200c09e4a7874720b88f886dbb130ab391b6cd2c38b23d5720fd247",
-      "bytes": 10240
+      "sha256": "31dbe5b620ad200a93cea0d0edce76cb380978570c5af7700ff63e9723ec9803",
+      "bytes": 10892
     },
     "index.html": {
-      "sha256": "3c0e6905fb3a3a4db1a9e33f26f9fcc9c63399310aac5caf0517789fe0f1da16",
-      "bytes": 25660
+      "sha256": "47021090f3f47f4f87f9b47839bceb21798b093da44950148275d4095e31ba70",
+      "bytes": 26760
     },
     "location-preview.svg": {
       "sha256": "50e9b09d153d6b3d6299522b457f217ab67c6c27a9628f21cc7f96ea35d7d6ad",
@@ -53,8 +57,8 @@
       "bytes": 12722
     },
     "operating-standards.html": {
-      "sha256": "a0b5461a3a3eb9db737cbce5db740953ebdabfad6ccea66bb7b6af56c46a8dba",
-      "bytes": 7589
+      "sha256": "57e10677c78f32023db5b164faee1ba742945d411480501e245fbe7ea412f47e",
+      "bytes": 8135
     },
     "participation-guide.css": {
       "sha256": "b22568061b1bb9ed99a861283f6a2f519eda9dd143aab34ce7079aa6cc5f83e9",
@@ -85,12 +89,12 @@
       "bytes": 34613
     },
     "proposed-safeguards.html": {
-      "sha256": "acf7acd24a7f90d54d23df56b233ab24aeb04f864a11ca527fa6cbd41f957758",
-      "bytes": 13525
+      "sha256": "83493e4f7ee5d2ff901164693f49de94a871729b6585312fac1127206ca08f66",
+      "bytes": 39955
     },
     "public-costs.html": {
-      "sha256": "5f5c544da6dfc3cd5ead6af54f6ac82ec5435319a87e6d0afc56fda92e87223b",
-      "bytes": 10919
+      "sha256": "3a51c1e7e4e31e93baf9b9741fcb07c0cb99649e1452d99ac5d6fbebad9b40b6",
+      "bytes": 11698
     },
     "readability.css": {
       "sha256": "e0ac8fa01d866f10e4ef653c858159cc27282377a13869c1169c2dde7403768b",
@@ -193,16 +197,16 @@
       "bytes": 14554939
     },
     "review-status.html": {
-      "sha256": "c23d8d96fc16b8ef03a9d1e3e53d38c2dfff6e3b961efe8bcd6cee6b3ed0111a",
-      "bytes": 6979
+      "sha256": "e11254eee52671c28407a3118cadc56769449feb1f7759eabee44f6f2ecd6a62",
+      "bytes": 7704
     },
     "robots.txt": {
       "sha256": "791c45906f0ed030105b406f1b4b3af29b64eae602b6a27d97ba16ddecbbd4ff",
       "bytes": 98
     },
     "safeguards.html": {
-      "sha256": "d3b54c341545e632d5b6830f0186e7297ce7481d3fd01c4205035f3401afde75",
-      "bytes": 76899
+      "sha256": "2781a972702ffc48cdc456ac6222c49d675c6cf42434624860655dfbdc339b83",
+      "bytes": 77891
     },
     "sitemap.xml": {
       "sha256": "f416a99887fd88b08b453e0747dde5c2cf1ac8571a435e5a995ca63739d8567e",
@@ -229,20 +233,20 @@
       "bytes": 26663
     },
     "state-oversight.html": {
-      "sha256": "0af2380105f056c7806d69f489e65c2215dd281143e4bc297c77d9407a90a93e",
-      "bytes": 14544
+      "sha256": "3d19e3caa2d65d8e3771057ea010d3a6e55413e6d4a6ca6de42ac67ef070533e",
+      "bytes": 15322
     },
     "styles.css": {
       "sha256": "2eb51e8e242db45c29419564a46009d4875467917c6abb913340ee5304b1c2ad",
       "bytes": 42082
     },
     "tri-state-high-impact-load-tariff.html": {
-      "sha256": "ee40e0f916254320bbf92bf57d9953233b36d6ec4c0d528a0eeeb062d4b0c774",
-      "bytes": 36213
+      "sha256": "47cc6a593fcb80e9ec26ae9cfccb5220f4e0e9a1b64c46c31092cf6d2c1d0268",
+      "bytes": 36762
     },
     "water.html": {
-      "sha256": "89c80b91a41d54fc8c9bc2febfbabb5c383237a21c4daae2031bd833ed9dd0b6",
-      "bytes": 11248
+      "sha256": "50a469c33bf2342f7898e5ae1f2a99539026d8678cb94f15fed85c3bbdf35cfa",
+      "bytes": 11879
     },
     "wydeq-status-2026-09-16.html": {
       "sha256": "9c0df5e537747accfdb3c2dad77a4af15c331299e4f475de9d32e518f16293e3",

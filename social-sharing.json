@@ -34,12 +34,12 @@
       "description": "Find county decision records, the REA member letter, agency correspondence, and the project timeline. Original PDFs and the records ZIP remain available."
     },
     "safeguards.html": {
-      "title": "All 59 detailed safeguards | Site Layer 4 Project Record",
-      "description": "Compare all 59 safeguards with their evidence, responsibilities and sources. General rules, project commitments and proposed requests are distinguished."
+      "title": "All 59 detailed evidence checks | Site Layer 4 Project Record",
+      "description": "Compare 59 evidence checks with their responsibilities and sources. General rules, project commitments and proposed requests are distinguished."
     },
     "proposed-safeguards.html": {
       "title": "Proposed safeguards for review | Site Layer 4 Project Record",
-      "description": "Review eight proposed safeguards for water, public costs and project accountability. These are requests for consideration, not adopted project requirements."
+      "description": "Explore eight proposed requests, their decision paths and supporting evidence. These are requests for consideration, not adopted project requirements."
     },
     "operating-standards.html": {
       "title": "Noise, light and operating standards | Site Layer 4 Project Record",

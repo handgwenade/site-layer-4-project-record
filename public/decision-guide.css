@@ -1,0 +1,73 @@
+/* Decision-oriented additions. Content and evidence remain in static HTML. */
+.decision-orientation,.record-structure,.status-reading-guide,.maintainer-note {
+  max-width:960px;
+  margin:1.5rem 0 2rem;
+  padding:clamp(1.1rem,3vw,2rem);
+  background:#e9f1ed;
+  border-top:3px solid #32605c;
+}
+.decision-orientation h2,.record-structure h2 {font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+.decision-orientation p,.record-structure p,.status-reading-guide p,.maintainer-note p {max-width:80ch;line-height:1.65}
+.decision-orientation a,.record-structure a,.maintainer-note a {color:#1756a9;text-underline-offset:3px}
+.request-eyebrow {font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#32605c}
+.decision-proceedings {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin:1.5rem 0}
+.decision-proceedings>div {border-top:1px solid #a7beb7;padding-top:1rem}
+.decision-proceedings h3 {font-size:1.08rem;line-height:1.5}
+.decision-date-note {font-size:.9rem;color:#40536a}
+.record-structure {background:transparent;border:1px solid #ccd8d6}
+.request-jump {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem 1.5rem;max-width:960px;margin:1.5rem 0 2rem}
+.request-jump a {display:flex;align-items:center;min-height:44px;padding:.5rem .1rem;font-weight:700;border-bottom:1px solid #ccd8d6}
+.decision-request {border-radius:0;border:1px solid #ccd8d6;border-top:3px solid #32605c;margin:2rem 0;padding:clamp(1.1rem,3vw,2rem)}
+.decision-request h3 {font-size:clamp(1.35rem,2.6vw,1.7rem);line-height:1.3;max-width:40ch}
+.request-fields {margin:1.25rem 0 0}
+.request-fields>dt {font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#40536a;margin:1.4rem 0 .45rem}
+.request-fields>dd {margin:0;line-height:1.7;max-width:82ch}
+.request-fields>.plain-english {font-size:1.16rem;font-weight:650;color:#10233b;max-width:66ch}
+.decision-badges {display:flex;flex-wrap:wrap;gap:.55rem;margin:.2rem 0 .8rem}
+.decision-badge {display:inline-flex;align-items:center;min-height:36px;padding:.4rem .65rem;border:1px solid #a7beb7;background:#edf4f1;color:#1756a9;font-size:.75rem;line-height:1.5;font-weight:800;letter-spacing:.035em;text-underline-offset:3px}
+.decision-badge-unverified {background:#f6f3eb;border-color:#c5bca6;color:#574c35}
+.decision-badge .badge-date {white-space:nowrap}
+.decision-request a:hover,.request-jump a:hover {text-decoration-thickness:2px}
+.decision-request a:focus-visible,.request-jump a:focus-visible,.decision-orientation a:focus-visible {outline:3px solid #1756a9;outline-offset:3px}
+.request-record {background:#f3f6f5;padding:1rem;border-left:3px solid #a7beb7}
+.request-fields p+p {margin-top:.65rem}
+.evidence-links {display:flex;align-items:baseline;flex-wrap:wrap;gap:.25rem .5rem}
+.evidence-links a {display:inline-block;white-space:nowrap;font-variant-numeric:tabular-nums;padding:.2rem 0;min-height:32px}
+.request-source-list {padding-left:1.2rem;margin:.5rem 0}
+.request-source-list li {padding:.2rem 0}
+.request-topics a {display:inline-block;padding:.3rem 0}
+.decision-request .request-return {margin-top:1.5rem;padding-top:1rem;border-top:1px solid #ccd8d6;font-size:.9rem}
+.related-requests {margin:1.6rem 0;padding:1rem 0;border-block:1px solid currentColor;max-width:80ch}
+.related-requests p {margin:0 0 .6rem}
+.related-requests p:last-child {margin-bottom:0}
+.related-requests .related-request-note {font-size:.88rem}
+.related-requests a {display:inline-block;padding:.3rem 0}
+.topic-directory .topic-request-links {font-size:.9rem;margin-top:.8rem}
+.sl4-scard.topic-directory .lede a {text-decoration:underline;text-underline-offset:3px}
+.topic-request-links a {display:inline-block;padding:.3rem .2rem}
+.status-reading-guide {background:#fff;border:1px solid #ccd8d6}
+.status-reading-guide h3 {font-size:1.25rem}
+.status-concepts {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:1.25rem 0 0}
+.status-concepts dt {font-size:.78rem;text-transform:uppercase;font-weight:800;letter-spacing:.06em;margin-bottom:.5rem;color:#32605c}
+.status-concepts dd {margin:0;font-size:.95rem;line-height:1.65}
+.maintainer-note {background:#fff}
+.maintainer-note h2 {font-size:1.4rem}
+.maintainer-contact {padding:.8rem 1rem;border-left:3px solid #8c773e;background:#f6f3eb;font-size:.95rem}
+@media(max-width:680px) {
+  .decision-proceedings,.status-concepts {grid-template-columns:1fr;gap:1rem}
+  .request-jump {grid-template-columns:1fr;gap:.35rem}
+  .decision-request {margin:1.5rem 0}
+  .decision-badge {min-height:44px}
+  #P3 .decision-badges {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+  #P3 .decision-badge {display:flex;min-width:0;padding:.4rem .5rem}
+  .request-record {padding:.8rem}
+  .evidence-links a {min-height:40px}
+  .decision-request .link-separator,.related-requests .link-separator {display:none}
+  .request-topics {display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+  .related-request-links {display:flex;flex-direction:column;gap:.25rem}
+}
+@media print {
+  .request-jump,.request-return {display:none}
+  .decision-request {break-inside:auto}
+  .request-fields>dt {break-after:avoid}
+}

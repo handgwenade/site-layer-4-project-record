@@ -11,10 +11,11 @@ export function canonicalUrl(path, origin) {
 export function addSocialMetadata(html, path, config, origin) {
   const page = config.pages[path];
   assert.ok(page?.title && page?.description, `Missing page-specific sharing copy: ${path}`);
-  assert.ok(config.image.alt, 'Sharing image needs descriptive alt text');
-  assert.match(config.image.path, /^social\/[a-z0-9-]+\.(png|jpe?g)$/);
+  const artwork = page.image || config.image;
+  assert.ok(artwork.alt, 'Sharing image needs descriptive alt text');
+  assert.match(artwork.path, /^social\/[a-z0-9-]+\.(png|jpe?g)$/);
   const url = canonicalUrl(path, origin);
-  const image = new URL(`/${config.image.path}`, origin).href;
+  const image = new URL(`/${artwork.path}`, origin).href;
   const properties = {
     'og:title': page.title,
     'og:description': page.description,
@@ -24,17 +25,17 @@ export function addSocialMetadata(html, path, config, origin) {
     'og:locale': 'en_US',
     'og:image': image,
     'og:image:secure_url': image,
-    'og:image:type': config.image.type,
-    'og:image:width': config.image.width,
-    'og:image:height': config.image.height,
-    'og:image:alt': config.image.alt
+    'og:image:type': artwork.type,
+    'og:image:width': artwork.width,
+    'og:image:height': artwork.height,
+    'og:image:alt': artwork.alt
   };
   const twitter = {
     'twitter:card': 'summary_large_image',
     'twitter:title': page.title,
     'twitter:description': page.description,
     'twitter:image': image,
-    'twitter:image:alt': config.image.alt
+    'twitter:image:alt': artwork.alt
   };
   const [head, ...rest] = html.split('</head>');
   assert.equal(rest.length, 1, `Expected one head: ${path}`);

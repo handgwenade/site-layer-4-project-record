@@ -15,7 +15,14 @@
     },
     "participation-guide.html": {
       "title": "Have your say | Site Layer 4 Project Record",
-      "description": "Find county land-use hearing and federal utility filing instructions, dated deadline checks, and proposed comment wording to adapt."
+      "description": "Find county land-use hearing and federal utility filing instructions, dated deadline checks, and proposed comment wording to adapt.",
+      "image": {
+        "path": "social/participation-guide-share-v1.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Have your say. Federal / FERC filing deadline: September 30, 2026, 3 p.m. MDT / 5 p.m. EDT. Countywide land-use-rule hearing: October 20, 2026, 1 p.m. MDT; not a Site Layer 4 permit hearing. Open the participation guide for current dates and instructions."
+      }
     },
     "water.html": {
       "title": "Water and wells | Site Layer 4 Project Record",

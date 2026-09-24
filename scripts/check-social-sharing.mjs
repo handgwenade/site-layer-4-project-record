@@ -25,6 +25,7 @@ for (const [path, metadata] of Object.entries(approved)) {
 assert.equal(records, 23);
 const titles = new Set(), descriptions = new Set();
 for (const [path, page] of Object.entries(config.pages)) {
+  const artwork = page.image || config.image;
   const html = readFileSync(resolve(output, path), 'utf8');
   const source = readFileSync(resolve(root, 'public', path), 'utf8');
   const analytics = analyticsMarkup(origin);
@@ -52,11 +53,11 @@ for (const [path, page] of Object.entries(config.pages)) {
   const canonicals = [...head.matchAll(/<link rel="canonical" href="([^"]+)"\/>/g)];
   assert.equal(canonicals.length, 1);
   assert.equal(canonicals[0][1], value('og:url'));
-  assert.equal(value('og:image'), `${origin}/${config.image.path}`);
-  assert.equal(value('og:image:width'), '1200');
-  assert.equal(value('og:image:height'), '630');
-  assert.equal(value('og:image:type'), config.image.type);
-  assert.equal(value('og:image:alt'), config.image.alt);
+  assert.equal(value('og:image'), `${origin}/${artwork.path}`);
+  assert.equal(value('og:image:width'), String(artwork.width));
+  assert.equal(value('og:image:height'), String(artwork.height));
+  assert.equal(value('og:image:type'), artwork.type);
+  assert.equal(value('og:image:alt'), artwork.alt);
   assert.equal(value('twitter:card'), 'summary_large_image');
   for (const key of ['title', 'description', 'image', 'image:alt']) assert.equal(value(`twitter:${key}`), value(`og:${key}`));
   titles.add(page.title); descriptions.add(page.description);
@@ -64,15 +65,22 @@ for (const [path, page] of Object.entries(config.pages)) {
 const pages = Object.keys(config.pages).length;
 assert.equal(titles.size, pages); assert.equal(descriptions.size, pages);
 assert.equal(pages, readdirSync(output).filter(path => path.endsWith('.html')).length);
-const imagePath = resolve(output, config.image.path);
-let image = { verified: false, blocker: 'The supplied Facebook artwork has not been located; sharing image not created.' };
-if (existsSync(imagePath)) {
+const images = [];
+const artworkByPath = new Map([config.image, ...Object.values(config.pages).flatMap(page => page.image ? [page.image] : [])].map(image => [image.path, image]));
+for (const [path, artwork] of artworkByPath) {
+  const imagePath = resolve(output, path);
+  if (!existsSync(imagePath)) {
+    images.push({ path, verified: false, blocker: 'Sharing image is missing.' });
+    continue;
+  }
   const bytes = readFileSync(imagePath);
   assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
-  assert.equal(bytes.readUInt32BE(16), 1200);
-  assert.equal(bytes.readUInt32BE(20), 630);
+  assert.equal(bytes.readUInt32BE(16), artwork.width);
+  assert.equal(bytes.readUInt32BE(20), artwork.height);
+  assert.equal(artwork.width, 1200);
+  assert.equal(artwork.height, 630);
   assert.ok(bytes.length < 5 * 1024 * 1024, 'Sharing image should stay below 5 MB');
-  image = { verified: true, width: 1200, height: 630, bytes: bytes.length };
+  images.push({ path, verified: true, width: artwork.width, height: artwork.height, bytes: bytes.length });
 }
-console.log(JSON.stringify({ pages, initialHtmlMetadata: 'pass', uniqueTitlesAndDescriptions: 'pass', absoluteCleanProductionUrls: 'pass', visibleBodiesUnchanged: 'pass', originalRecordsUnchanged: records, image, publicationApproved: config.releaseStatus === 'approved' }, null, 2));
-if (!image.verified) process.exitCode = 2;
+console.log(JSON.stringify({ pages, initialHtmlMetadata: 'pass', uniqueTitlesAndDescriptions: 'pass', absoluteCleanProductionUrls: 'pass', visibleBodiesUnchanged: 'pass', originalRecordsUnchanged: records, images, publicationApproved: config.releaseStatus === 'approved' }, null, 2));
+if (images.some(image => !image.verified)) process.exitCode = 2;

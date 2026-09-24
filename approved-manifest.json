@@ -17,8 +17,8 @@
       "bytes": 5188
     },
     "evidence.html": {
-      "sha256": "27e6c6311584c6b197d8205bb2f82bc70d8612884466ed558dbf99410602d4c7",
-      "bytes": 93098
+      "sha256": "280f33e653d5dca629427135421c0c26dc4e5557c8b13a04488026449bcf6ca9",
+      "bytes": 93425
     },
     "favicon.svg": {
       "sha256": "80f59d636e2769a9ecaba7a52b432ae540c11e4e8be669fa1ffff5f6c9c95946",
@@ -29,12 +29,12 @@
       "bytes": 13388
     },
     "governance.html": {
-      "sha256": "31dbe5b620ad200a93cea0d0edce76cb380978570c5af7700ff63e9723ec9803",
-      "bytes": 10892
+      "sha256": "256f4ef6dcae8ff5bbbbf03a3deacb50ace8fd2fd5bc77a99eea771799b3b488",
+      "bytes": 10951
     },
     "index.html": {
-      "sha256": "fcd635cb31c1be4b60049bbf57a43fc77201554919eecd76bd096ae490e7aedd",
-      "bytes": 32487
+      "sha256": "e451e8b9decd0ced449a656a60dca59298100405ef13587e1ce771970fabc074",
+      "bytes": 37404
     },
     "location-preview.svg": {
       "sha256": "50e9b09d153d6b3d6299522b457f217ab67c6c27a9628f21cc7f96ea35d7d6ad",
@@ -53,20 +53,20 @@
       "bytes": 768687
     },
     "meeting-2026-09-16.html": {
-      "sha256": "3e7832b6a119e9e71016a802c459a869c589daf80645faff66b91ff45bba76bd",
-      "bytes": 12722
+      "sha256": "ab339b7507be24f95b2055f495b7ce8b0fe5e2879bf0de7c6a12e974a135d5c2",
+      "bytes": 12780
     },
     "operating-standards.html": {
-      "sha256": "57e10677c78f32023db5b164faee1ba742945d411480501e245fbe7ea412f47e",
-      "bytes": 8135
+      "sha256": "dacc3db419a918ba9b4a8f611a44a0134c78287d025dc060027ace4523e5fbb3",
+      "bytes": 8194
     },
     "participation-guide.css": {
       "sha256": "b22568061b1bb9ed99a861283f6a2f519eda9dd143aab34ce7079aa6cc5f83e9",
       "bytes": 8537
     },
     "participation-guide.html": {
-      "sha256": "a1fac4e6ae2f7171d451fc335a0ac1d46c52ed01a7f0cd4089469018fcd9ef96",
-      "bytes": 32098
+      "sha256": "3ba457ac56e681e6ee83d1e1f4385816fbeeef03c7b9f462cd88363d0b0bc715",
+      "bytes": 42847
     },
     "participation-guide.js": {
       "sha256": "d6a9b8cfd6f324cd5e2b73137e51c104243c39fa19bdcd8dc3e74d1149a283ea",
@@ -81,28 +81,28 @@
       "bytes": 2321
     },
     "project-details.html": {
-      "sha256": "ac4c45d4569d15330551c2fc499db3e3a82d6a6dd41dc939ea4f12dfebc94770",
-      "bytes": 26702
+      "sha256": "80a0a596f40bb34cca3c3ccf9c19d0ce302ade16967801400cb941c7c8dec532",
+      "bytes": 26781
     },
     "project-notes.html": {
-      "sha256": "416331b19af4fcaebff6ec7a9e6e5cef722b71c98bb656b313f606694cfb1622",
-      "bytes": 34613
+      "sha256": "6151dcb62fd309ec0a209aefbaed56a5b70479b8e9605a19bb67a07cd24470c8",
+      "bytes": 35050
     },
     "proposed-safeguards.html": {
-      "sha256": "83493e4f7ee5d2ff901164693f49de94a871729b6585312fac1127206ca08f66",
-      "bytes": 39955
+      "sha256": "00431af93c70fc2c1f827abbd022afac6686006d110391a2a804fe0eea067320",
+      "bytes": 40101
     },
     "public-costs.html": {
-      "sha256": "3a51c1e7e4e31e93baf9b9741fcb07c0cb99649e1452d99ac5d6fbebad9b40b6",
-      "bytes": 11698
+      "sha256": "53edc15cb82552e29aeb2e77a7b412bafc3c4272cf541778681955de77fe6ef2",
+      "bytes": 11757
     },
     "readability.css": {
       "sha256": "e0ac8fa01d866f10e4ef653c858159cc27282377a13869c1169c2dde7403768b",
       "bytes": 8268
     },
     "records.html": {
-      "sha256": "9949495a4a6afdbfbb928ca480e28c69525e551df69481d1d3895c1e56cc0a20",
-      "bytes": 11219
+      "sha256": "693ebcc1f4d51d44d07c23605aca576d4bf4b6a8cd841c48d4cfb4f010e96009",
+      "bytes": 11277
     },
     "records/PLATTE_PZ_2026-08-26_SIGNED_MINUTES.pdf": {
       "sha256": "6e9920a905f8fc3684eb861b3c221c4e6596c80bed31d320dd9fecd7041a2b77",
@@ -197,20 +197,20 @@
       "bytes": 14554939
     },
     "review-status.html": {
-      "sha256": "e11254eee52671c28407a3118cadc56769449feb1f7759eabee44f6f2ecd6a62",
-      "bytes": 7704
+      "sha256": "03579c827425a6b1cbeccc4fcae73bc883d4f3dce37e0532d23eca643c88041d",
+      "bytes": 8978
     },
     "robots.txt": {
-      "sha256": "791c45906f0ed030105b406f1b4b3af29b64eae602b6a27d97ba16ddecbbd4ff",
-      "bytes": 98
+      "sha256": "c001eba23fd7c605c6a9e2dc519601c7bf42869b67533a430d333da48e0a6db8",
+      "bytes": 91
     },
     "safeguards.html": {
-      "sha256": "2781a972702ffc48cdc456ac6222c49d675c6cf42434624860655dfbdc339b83",
-      "bytes": 77891
+      "sha256": "89cb5fc2df5e20e97b44b6df7a2fc1e5fa247a879dd803e193169c2c360df66c",
+      "bytes": 77949
     },
     "sitemap.xml": {
-      "sha256": "f416a99887fd88b08b453e0747dde5c2cf1ac8571a435e5a995ca63739d8567e",
-      "bytes": 1818
+      "sha256": "2a8f7c0aabc0d7279a2a49bf360644f9a0d44f764e784b7d863f44ff5b076c71",
+      "bytes": 1597
     },
     "social/site-layer-4-share-v1.png": {
       "sha256": "b4e9fe1cb3fd3e015fc55784776cdaaf0b4972b0533c16e2efba2ca9113779c0",
@@ -229,32 +229,32 @@
       "bytes": 2144
     },
     "sources.html": {
-      "sha256": "13269142b1f33bd2a0dca31b552a20d8482fb9781fe715e81c4978cf17e9c29a",
-      "bytes": 26663
+      "sha256": "13c5821eb3310670e257d24292102eb5c7841bbe14985b760da19bb76b7b4202",
+      "bytes": 26832
     },
     "state-oversight.html": {
-      "sha256": "3d19e3caa2d65d8e3771057ea010d3a6e55413e6d4a6ca6de42ac67ef070533e",
-      "bytes": 15322
+      "sha256": "33e08d5c4ccd13ff6975b55353b98fba00b36c2b893488d83c28c00847c8aa0a",
+      "bytes": 15381
     },
     "styles.css": {
       "sha256": "2eb51e8e242db45c29419564a46009d4875467917c6abb913340ee5304b1c2ad",
       "bytes": 42082
     },
     "take-action.css": {
-      "sha256": "4fb558cef0c69150a4454937b24eba36bea841ed8a3bcb9f5c5174cbf137c351",
-      "bytes": 5842
+      "sha256": "7679b43da433df6ffabf95f6e0907a042e13b9c32021daec76d1b5066d7e0e83",
+      "bytes": 7640
     },
     "tri-state-high-impact-load-tariff.html": {
-      "sha256": "47cc6a593fcb80e9ec26ae9cfccb5220f4e0e9a1b64c46c31092cf6d2c1d0268",
-      "bytes": 36762
+      "sha256": "0240674f60e4d37fdcfc85c1452d9ed7957659217e7a7d09f93b7065e90a21de",
+      "bytes": 36841
     },
     "water.html": {
-      "sha256": "50a469c33bf2342f7898e5ae1f2a99539026d8678cb94f15fed85c3bbdf35cfa",
-      "bytes": 11879
+      "sha256": "c914487941b21a2ff5cd358aaab66f221d4c74c741f9d5bcd45b19bd469fe636",
+      "bytes": 11938
     },
     "wydeq-status-2026-09-16.html": {
-      "sha256": "9c0df5e537747accfdb3c2dad77a4af15c331299e4f475de9d32e518f16293e3",
-      "bytes": 4573
+      "sha256": "3cb96632dd787ee325d1a13630a791c8c31cbfab7306c53160a9a1646ec7a3e6",
+      "bytes": 4631
     }
   },
   "audience": "existing public Site; unchanged",

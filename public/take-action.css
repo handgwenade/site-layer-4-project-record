@@ -37,7 +37,8 @@
   line-height: 1.65;
   overflow-wrap: anywhere;
 }
-.sl4-participate .action-lede {max-width: 68ch; margin: 0 0 1.5rem; font-size: 1.05rem;}
+.sl4-participate .action-lede {max-width: 68ch; margin: 0 0 .5rem; font-size: 1.05rem;}
+.sl4-participate p.action-caveat {font-size: .86rem; margin: 0 0 1.5rem;}
 .sl4-participate strong {color: var(--action-text);}
 .sl4-participate a, .participation-guide .sl4-participate a {
   color: var(--action-federal);
@@ -91,6 +92,24 @@
 }
 .sl4-participate .action-when > span {display: block; font-size: 1rem; letter-spacing: 0; margin-top: .45rem; line-height: 1.5;}
 .sl4-participate .action-time {display: inline-block;}
+
+.sl4-participate .action-registration {margin: 0 0 1.4rem; padding: 0 0 1.2rem; border-bottom: 1px solid var(--action-border);}
+.sl4-participate a.action-register, .participation-guide .sl4-participate a.action-register {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 44px;
+  padding: .65rem .85rem;
+  border: 1px solid var(--action-federal);
+  border-radius: 5px;
+  background: var(--action-federal);
+  color: var(--action-bg);
+  font-size: .92rem;
+  font-weight: 750;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.sl4-participate a.action-register:hover {text-decoration: underline;}
+
 .sl4-participate h3, .sl4-participate .action-card > h2, .sl4-participate .action-say > h2 {color: var(--action-text); font-size: 1.15rem; line-height: 1.35; letter-spacing: 0; margin: 0 0 .7rem;}
 .sl4-participate .action-card p {margin-bottom: .9rem;}
 .sl4-participate .action-scope {border-left: 3px solid var(--action-county); padding-left: .8rem;}
@@ -118,6 +137,33 @@
 .sl4-participate .action-points {margin: 0; padding: 0; list-style: none; display: grid; gap: .85rem;}
 .sl4-participate .action-points li {position: relative; padding-left: 1.4rem; margin: 0;}
 .sl4-participate .action-points li::before {content: '→'; position: absolute; left: 0; color: var(--action-county); font-weight: 750;}
+.sl4-participate .action-sentence {color: var(--action-text); margin: .45rem 0 .65rem; max-width: 75ch;}
+.sl4-participate .action-prompt-note {font-size: .86rem; margin: .4rem 0 .7rem;}
+.sl4-participate .action-copy {display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin-top: .6rem;}
+.sl4-participate .action-copy-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  padding: .55rem .8rem;
+  border: 1px solid var(--action-federal);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--action-federal);
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+.sl4-participate .action-copy-button:hover {background: var(--action-bg);}
+.sl4-participate .action-copy-button[hidden] {display: none;}
+.sl4-participate .action-copy-feedback {color: var(--action-muted); font-size: .85rem; line-height: 1.5; overflow-wrap: anywhere;}
+.guide-example p + p {margin-top: .8rem;}
+.participation-guide .guide-actions h4 {margin-top: 1.5rem;}
 .sl4-participate .action-fineprint {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.5rem;}
 .sl4-participate .action-fineprint p {font-size: .86rem; margin: 0;}
 .sl4-participate .action-fineprint strong {display: block; margin-bottom: .25rem;}

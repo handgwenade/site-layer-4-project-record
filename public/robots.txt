@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://slater-project-record.viirl-1659.chatgpt.site/sitemap.xml
+Sitemap: https://site-layer-4-project-record.vercel.app/sitemap.xml

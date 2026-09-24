@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { addSocialMetadata } from './social-sharing.mjs';
+import { addAnalytics } from './analytics.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = resolve(root, 'public');
@@ -46,7 +47,10 @@ for (const path of actual) {
   if (path.endsWith('.html') || path === 'sitemap.xml' || path === 'robots.txt') {
     const text = original.toString('utf8');
     let updated = text.replaceAll(previousOrigin, origin);
-    if (path.endsWith('.html')) updated = addSocialMetadata(updated, path, sharing, origin);
+    if (path.endsWith('.html')) {
+      updated = addSocialMetadata(updated, path, sharing, origin);
+      updated = addAnalytics(updated, origin);
+    }
     if (updated !== text) metadataUpdates++;
     bytes = Buffer.from(updated);
   }

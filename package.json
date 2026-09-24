@@ -7,6 +7,7 @@
     "build": "node scripts/build.mjs",
     "preview:build": "node scripts/build.mjs --preview",
     "check:social": "node scripts/check-social-sharing.mjs",
+    "check:analytics": "node scripts/check-analytics.mjs",
     "check": "node scripts/build.mjs --check"
   },
   "engines": { "node": "24.x" }

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { canonicalUrl } from './social-sharing.mjs';
+import { analyticsMarkup } from './analytics.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'social-sharing.json')));
@@ -26,7 +27,9 @@ const titles = new Set(), descriptions = new Set();
 for (const [path, page] of Object.entries(config.pages)) {
   const html = readFileSync(resolve(output, path), 'utf8');
   const source = readFileSync(resolve(root, 'public', path), 'utf8');
-  assert.equal(html.split('</head>')[1], source.split('</head>')[1], `Visible content or body changed: ${path}`);
+  const analytics = analyticsMarkup(origin);
+  assert.equal(html.split(analytics).length, 2, `Expected one shared analytics loader: ${path}`);
+  assert.equal(html.replace(analytics, '').split('</head>')[1], source.split('</head>')[1], `Visible content or body changed: ${path}`);
   const head = html.split('</head>')[0], meta = tags(head);
   const value = key => {
     const found = meta.filter(tag => tag.property === key || tag.name === key);

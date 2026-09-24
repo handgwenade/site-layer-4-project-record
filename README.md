@@ -15,13 +15,21 @@ Use Node.js 24. No third-party packages are needed.
 ```sh
 npm run check
 npm run build
+npm run check:social -- --production
+npm run check:analytics
 ```
 
-Vercel serves only generated `dist/`, never the repository root. The build preserves visible content and records, updates canonical/sitemap/robots URLs to the origin in `site.config.json`, and renders page-specific descriptions and social metadata into the initial HTML. The original approved inputs retain their original metadata for traceability.
+Vercel serves only generated `dist/`, never the repository root. The build preserves visible content and records, updates canonical/sitemap/robots URLs to the origin in `site.config.json`, and renders page-specific descriptions and social metadata into the initial HTML. Source canonical, sitemap and robots URLs also use the production origin, so direct source previews show the current destination.
 
 The public hostname is `site-layer-4-project-record.vercel.app`, subject to its Vercel domain assignment. Existing `.html` links and fragment identifiers are retained; clean URLs are enabled.
 
 ## Future changes
+
+### Web Analytics
+
+`scripts/analytics.mjs` adds Vercel's hosted Web Analytics script to every built HTML page. It loads only on the production origin configured in `site.config.json`; local files, localhost, and preview deployment domains do not send analytics. This static HTML integration does not need React or an npm analytics dependency. Enable Web Analytics for the linked Vercel project before deploying; Vercel supplies `/_vercel/insights/script.js` and the page-view endpoint. No custom events are configured.
+
+`npm run check:analytics` verifies coverage across all 18 pages, production-only loading, and duplicate prevention. The social-sharing check permits only the exact generated analytics block when checking that the build preserves visible body content.
 
 ### Social-sharing metadata
 

@@ -4,5 +4,127 @@
   "buildCommand": "npm run build",
   "installCommand": "",
   "outputDirectory": "dist",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://state-44.com/site-layer-4/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index",
+      "destination": "https://state-44.com/site-layer-4/",
+      "statusCode": 301
+    },
+    {
+      "source": "/evidence",
+      "destination": "https://state-44.com/site-layer-4/evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/governance",
+      "destination": "https://state-44.com/site-layer-4/governance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/meeting-2026-09-16",
+      "destination": "https://state-44.com/site-layer-4/meeting-2026-09-16/",
+      "statusCode": 301
+    },
+    {
+      "source": "/operating-standards",
+      "destination": "https://state-44.com/site-layer-4/operating-standards/",
+      "statusCode": 301
+    },
+    {
+      "source": "/participation-guide",
+      "destination": "https://state-44.com/site-layer-4/participation-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-details",
+      "destination": "https://state-44.com/site-layer-4/project-details/",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-notes",
+      "destination": "https://state-44.com/site-layer-4/project-notes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/proposed-safeguards",
+      "destination": "https://state-44.com/site-layer-4/proposed-safeguards/",
+      "statusCode": 301
+    },
+    {
+      "source": "/public-costs",
+      "destination": "https://state-44.com/site-layer-4/public-costs/",
+      "statusCode": 301
+    },
+    {
+      "source": "/records",
+      "destination": "https://state-44.com/site-layer-4/records/",
+      "statusCode": 301
+    },
+    {
+      "source": "/review-status",
+      "destination": "https://state-44.com/site-layer-4/review-status/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safeguards",
+      "destination": "https://state-44.com/site-layer-4/safeguards/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sources",
+      "destination": "https://state-44.com/site-layer-4/sources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/state-oversight",
+      "destination": "https://state-44.com/site-layer-4/state-oversight/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tri-state-high-impact-load-tariff",
+      "destination": "https://state-44.com/site-layer-4/tri-state-high-impact-load-tariff/",
+      "statusCode": 301
+    },
+    {
+      "source": "/water",
+      "destination": "https://state-44.com/site-layer-4/water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wydeq-status-2026-09-16",
+      "destination": "https://state-44.com/site-layer-4/wydeq-status-2026-09-16/",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/:path*",
+      "destination": "https://state-44.com/wp-content/themes/state44/assets/sl4/records/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps/:path*",
+      "destination": "https://state-44.com/wp-content/themes/state44/assets/sl4/maps/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/social/:path*",
+      "destination": "https://state-44.com/wp-content/themes/state44/assets/sl4/social/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "https://state-44.com/wp-content/themes/state44/logos/favicon.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://state-44.com/site-layer-4/",
+      "statusCode": 302
+    }
+  ]
 }
